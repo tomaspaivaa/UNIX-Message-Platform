@@ -24,12 +24,29 @@ It also supports **persistent messages** that are stored for a limited lifetime 
 
 ## Main Features
 
-- **Topic-based messaging:** users can publish or subscribe to specific topics.  
-- **Real-time delivery:** messages sent to a topic are immediately distributed to subscribers.  
-- **Persistent messages:** messages can remain available for a defined lifetime and are reloaded on restart.  
-- **Administrative control:** allows monitoring, locking/unlocking topics, and removing users via the manager console.  
-- **Multi-client simulation:** multiple feeds (users) can run simultaneously from separate terminals.  
-- **Safely termination:** both manager and feed processes handle shutdown safely and cleanly.  
+- **Topic-based messaging** – users can publish or subscribe to specific topics.  
+- **Real-time delivery** – messages sent to a topic are immediately distributed to subscribers.  
+- **Persistent messages** – messages can remain available for a defined lifetime and are reloaded on restart.  
+- **Administrative control** – allows monitoring, locking/unlocking topics, and removing users via the manager console.  
+- **Multi-client simulation** –  multiple feeds (users) can run simultaneously from separate terminals.  
+- **Safely termination** – both manager and feed processes handle shutdown safely and cleanly.  
+
+## Commands
+### In the feed client
+- **topics** – List all available topics
+- **msg \<topic\> \<duration\> \<message\>** – Send a message to a topic (duration = 0 for non-persistent)
+- **subscribe \<topic\>** – Subscribe to a topic  
+- **unsubscribe \<topic\>** – Unsubscribe from a topic  
+- **exit** – Leave the platform
+
+### In the manager console
+- **users** – List all active users  
+- **remove \<username\>** – Disconnect a user  
+- **topics** – Show all topics and message counts  
+- **show \<topic\>** – Display messages in a topic  
+- **lock \<topic\>** – Block new messages in a topic  
+- **unlock \<topic\>** – Unblock a topic  
+- **close** – Shut down the system
 
 ## Environment Variables
 The system uses an environment variable to store persistent messages:
@@ -58,4 +75,4 @@ Each client can execute text commands to interact with the system.
 
 ---
 
-*This work was completed as part of the “Operational Systems” course during the 2024/2025 academic year.*
+*This work was completed as part of the “Operating Systems” course during the 2024/2025 academic year.*
