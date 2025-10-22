@@ -75,4 +75,4 @@ Each client can execute text commands to interact with the system.
 
 ---
 
-*This work was completed as part of the “Operating Systems” course during the 2024/2025 academic year.*
+*This work was completed as part of the “Operating Systems” course during the 2024/2025 academic year in a group of 2 members. (Grade: 10 out of 10)*
